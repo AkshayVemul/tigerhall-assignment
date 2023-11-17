@@ -1,13 +1,11 @@
-import { Box, ChakraProvider, Heading, Text } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { appTheme } from '@ui/theme'
+import { AppHeader } from '@components/app-header.component'
 
 function App() {
   return (
     <ChakraProvider theme={appTheme}>
-      <Box bg="primary">
-        <Heading fontSize={'10xl'}>ViteSetup</Heading>
-        <Text>Welcome</Text>
-      </Box>
+      <AppHeader />
     </ChakraProvider>
   )
 }

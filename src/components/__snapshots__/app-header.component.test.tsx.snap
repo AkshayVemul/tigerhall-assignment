@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Header should match snapshot 1`] = `
+<div>
+  <div
+    class="css-1whykrx"
+  >
+    <h2
+      class="chakra-heading css-0"
+    >
+      Test Component
+    </h2>
+    <p
+      class="chakra-text css-0"
+    >
+      Welcome
+    </p>
+  </div>
+</div>
+`;
