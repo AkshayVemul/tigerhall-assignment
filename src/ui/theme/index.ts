@@ -30,6 +30,15 @@ export const appTheme = extendTheme({
     },
   },
 
+  styles: {
+    global: {
+      body: {
+        bg: 'teal.1000',
+        letterSpacing: '0.24px',
+      },
+    },
+  },
+
   config: {
     cssVarPrefix: 'tigerhall',
   },

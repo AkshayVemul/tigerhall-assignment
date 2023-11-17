@@ -8,6 +8,8 @@ export default defineConfig({
     alias: {
       '@ui': '/src/ui',
       '@components': '/src/components',
+      '@client': '/src/client',
+      '@graphql': '/src/graphql',
     },
   },
 })
