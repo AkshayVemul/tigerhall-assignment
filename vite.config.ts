@@ -10,6 +10,7 @@ export default defineConfig({
       '@components': '/src/components',
       '@client': '/src/client',
       '@graphql': '/src/graphql',
+      '@utils': '/src/utils',
     },
   },
 })

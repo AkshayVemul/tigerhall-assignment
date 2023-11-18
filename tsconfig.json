@@ -20,7 +20,8 @@
       "@ui/*": ["ui/*"],
       "@components/*": ["components/*"],
       "@client/*": ["client/*"],
-      "@graphql/*": ["graphql/*"]
+      "@graphql/*": ["graphql/*"],
+      "@utils/*": ["utils/*"]
     },
 
     "esModuleInterop": true
