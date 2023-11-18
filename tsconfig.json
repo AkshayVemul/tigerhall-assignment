@@ -21,7 +21,9 @@
       "@components/*": ["components/*"],
       "@client/*": ["client/*"],
       "@graphql/*": ["graphql/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@hoc/*": ["hoc/*"]
+
     },
 
     "esModuleInterop": true

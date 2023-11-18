@@ -11,6 +11,7 @@ export default defineConfig({
       '@client': '/src/client',
       '@graphql': '/src/graphql',
       '@utils': '/src/utils',
+      '@hoc': '/src/hoc',
     },
   },
 })

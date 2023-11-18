@@ -42,7 +42,7 @@ export const GET_PODCAST = gql`
   }
 `
 
-type PodcastType = {
+export type PodcastType = {
   name: string
   image: {
     uri: string

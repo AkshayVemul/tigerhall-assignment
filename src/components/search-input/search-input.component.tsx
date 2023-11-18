@@ -1,4 +1,5 @@
-import { Input } from '@chakra-ui/react'
+import { HStack, Input } from '@chakra-ui/react'
+import { SearchIcon } from '@components/icons/search.icon'
 import { useState } from 'react'
 
 export type SearchInputProps = {
@@ -8,14 +9,27 @@ export type SearchInputProps = {
 export const SearchInput = ({ onChange }: SearchInputProps) => {
   const [value, setValue] = useState('')
   return (
-    <Input
-      color={'white'}
-      value={value}
-      onChange={(event) => {
-        const currentValue = event.currentTarget.value
-        setValue(currentValue)
-        onChange(currentValue)
-      }}
-    />
+    <HStack position={'relative'}>
+      <Input
+        px={2}
+        py={3}
+        paddingLeft={8}
+        color={'white'}
+        value={value}
+        bg={'grey.900'}
+        borderWidth={'1px'}
+        border={'grey.700'}
+        borderRadius={4}
+        focusBorderColor={'tigerOrange.600'}
+        onChange={(event) => {
+          const currentValue = event.currentTarget.value
+          setValue(currentValue)
+          onChange(currentValue)
+        }}
+      />
+      <HStack position={'absolute'} left={3} zIndex={'1'}>
+        <SearchIcon color={'white'} />
+      </HStack>
+    </HStack>
   )
 }
