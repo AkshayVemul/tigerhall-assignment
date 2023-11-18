@@ -10,7 +10,9 @@ exports[`Content Card should render the component 1`] = `
     >
       <img
         alt="podcast_image"
-        src="test_url"
+        class="chakra-image css-ikrqgh"
+        loading="lazy"
+        src="https://www.test_url.com/resize/250x//"
       />
       <div
         class="chakra-stack css-edma2d"

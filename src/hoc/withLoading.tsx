@@ -1,11 +1,9 @@
-import { Heading } from '@chakra-ui/react'
 import { ComponentType } from 'react'
+import { DefaultLoader } from './default-loader'
 
 interface WithLoadingProps {
   isLoading: boolean
 }
-
-const DefaultLoader = () => <Heading>Loading....</Heading>
 
 export function withLoading<WrappedComponentProps>(
   WrappedComponent: ComponentType<WrappedComponentProps>,

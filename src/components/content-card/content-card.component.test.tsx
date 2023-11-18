@@ -9,7 +9,7 @@ describe('Content Card', () => {
         authorCompany="Author Company"
         title="Title"
         description="Lorem ipsum dolor, sit"
-        imageUrl="test_url"
+        imageUrl="https://www.test_url.com"
         completed={30}
         watchedMinutes={20}
       />,

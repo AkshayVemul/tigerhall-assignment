@@ -1,0 +1,21 @@
+/* width */
+::-webkit-scrollbar {
+  width: var(--tigerhall-fontSizes-3xs);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--tigerhall-colors-tigerOrange-200);
+  border-radius: var(--tigerhall-fontSizes-3xs);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--tigerhall-colors-tigerOrange-600);
+  border-radius: var(--tigerhall-fontSizes-3xs);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tigerhall-colors-tigerOrange-800);
+}

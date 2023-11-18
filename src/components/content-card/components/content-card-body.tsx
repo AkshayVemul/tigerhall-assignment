@@ -1,4 +1,4 @@
-import { Box, HStack, Progress, Text } from '@chakra-ui/react'
+import { Box, HStack, Image, Progress, Text } from '@chakra-ui/react'
 import { PieIcon } from '@components/icons/pie.icon'
 import { PodcastIcon } from '@components/icons/podcast.icon'
 import { TimerIcon } from '@components/icons/timer.icon'
@@ -14,9 +14,19 @@ export const ContentCardBody = ({
   completed,
   watchedMinutes,
 }: ContentCardBodyProps) => {
+  const parsedImage = new URL(imageUrl)
+  const modifiedUrl = `${parsedImage.origin}/resize/250x/${parsedImage.pathname}`
   return (
     <Box position={'relative'}>
-      <img src={imageUrl} alt="podcast_image" />
+      <Image
+        src={modifiedUrl}
+        alt="podcast_image"
+        loading="lazy"
+        fallbackSrc="https://via.placeholder.com/244x120"
+        height={'120px'}
+        fit={'cover'}
+        aspectRatio={2 / 1}
+      />
       <HStack
         bg={'white'}
         alignItems={'center'}
@@ -64,7 +74,12 @@ export const ContentCardBody = ({
           {watchedMinutes}m
         </Text>
       </HStack>
-      <Progress colorScheme="tigerOrange" h={'2px'} size="sm" value={completed} />
+      <Progress
+        colorScheme="tigerOrange"
+        h={'2px'}
+        size="sm"
+        value={completed}
+      />
     </Box>
   )
 }

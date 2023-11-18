@@ -34,7 +34,15 @@ export const appTheme = extendTheme({
     global: {
       body: {
         bg: 'teal.1000',
+        lineHeight: 'shorter',
         letterSpacing: '0.24px',
+        height: 'full',
+      },
+      html: {
+        height: 'full',
+      },
+      '#root': {
+        height: 'full',
       },
     },
   },

@@ -20,6 +20,7 @@ export const SearchInput = ({ onChange }: SearchInputProps) => {
         borderWidth={'1px'}
         border={'grey.700'}
         borderRadius={4}
+        w={'full'}
         focusBorderColor={'tigerOrange.600'}
         onChange={(event) => {
           const currentValue = event.currentTarget.value
